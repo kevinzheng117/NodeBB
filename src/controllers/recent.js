@@ -105,8 +105,6 @@ function applyPagination(data, ctx) {
 }
 
 recentController.getData = async function (req, url, sort) {
-	console.log('Kevin Zheng'); 
-
 	const { cid, tag } = req.query;
 	const filter = req.query.filter || '';
 	const { invalid, term } = sanitizeTerm(req.query.term);
